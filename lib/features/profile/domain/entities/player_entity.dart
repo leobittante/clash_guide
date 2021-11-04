@@ -1,0 +1,72 @@
+import 'package:clash_guide/features/profile/domain/entities/season/league_statistics_entity.dart';
+
+import 'Cards/cards_entity.dart';
+import 'Cards/current_deck_entity.dart';
+import 'Cards/current_favourite_card_entity.dart';
+import 'achievements_entity.dart';
+import 'arena_entity.dart';
+import 'badges_entity.dart';
+import 'clan_entity.dart';
+
+class PlayerEntity {
+  String tag;
+  String name;
+  int expLevel;
+  int trophies;
+  int bestTrophies;
+  int wins;
+  int losses;
+  int battleCount;
+  int threeCrownWins;
+  int challengeCardsWon;
+  int challengeMaxWins;
+  int tournamentCardsWon;
+  int tournamentBattleCount;
+  String role;
+  int donations;
+  int donationsReceived;
+  int totalDonations;
+  int warDayWins;
+  int clanCardsCollected;
+  ClanEntity clan;
+  ArenaEntity arena;
+  LeagueStatisticsEntity leagueStatistics;
+  List<BadgesEntity> badges;
+  List<AchievementsEntity> achievements;
+  List<CardsEntity> cards;
+  List<CurrentDeckEntity> currentDeck;
+  CurrentFavouriteCardEntity currentFavouriteCard;
+  int starPoints;
+  int expPoints;
+
+  PlayerEntity(
+      {required this.tag,
+        required this.name,
+        required this.expLevel,
+        required this.trophies,
+        required this.bestTrophies,
+        required this.wins,
+        required this.losses,
+        required this.battleCount,
+        required this.threeCrownWins,
+        required this.challengeCardsWon,
+        required this.challengeMaxWins,
+        required this.tournamentCardsWon,
+        required this.tournamentBattleCount,
+        required  this.role,
+        required this.donations,
+        required this.donationsReceived,
+        required this.totalDonations,
+        required this.warDayWins,
+        required  this.clanCardsCollected,
+        required this.clan,
+        required this.arena,
+        required  this.leagueStatistics,
+        required this.badges,
+        required this.achievements,
+        required this.cards,
+        required this.currentDeck,
+        required this.currentFavouriteCard,
+        required this.starPoints,
+        required  this.expPoints});
+}
